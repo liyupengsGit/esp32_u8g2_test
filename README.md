@@ -1,14 +1,9 @@
 # esp32_u8g2_test
 Test using u8g2 by Olikraus and the HAL provided by nKolban using Heltec wifi_kit_32
 
-Just copy the u8g2 folder (download at olikraus gitpage) to your esp-idf/components folder, rename it to "u8g2_esp32_hal" and copy the two files of HAL inside the 'u8g2_esp32_hal/csrc' and then include the "u8g2_esp32_hal.h" in the header of your code to use the u8g2 libraby.
+Just copy the u8g2 folder (download at olikraus gitpage) to your esp-idf/components folder, rename it to "u8g2_esp32_hal" and merge the folder found here to include the hal files and component mk to your u8g2 folder and then include the "u8g2_esp32_hal.h" in the header of your code to use the u8g2 libraby.
 
-make sure the u8g2_esp32_hal folder has the file named component.mk and it has this content:
-
-COMPONENT_SRCDIRS:=csrc
-COMPONENT_ADD_INCLUDEDIRS:=csrc
-
-
+# Further instructions
 
 Instructions on how to setup the HAL and use the library could be found at:
 
